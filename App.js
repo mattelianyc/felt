@@ -30,24 +30,22 @@ import vars, {rem} from './styles/vars.style';
 
 const App: () => React$Node = () => {
   return (
-    <>
+    <View style={{backgroundColor: 'rgb(0,18,26)', height: '100%', width: '100%'}}>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
+              
+              <Text style={{color: 'rgb(69,168,201)', fontWeight: '600', textAlign: 'center', letterSpacing: rem(3), marginBottom: rem(8), marginTop: rem(50)}}>SUCCESS!</Text>
+              
+              {/* CREDITS */}
+              <Text style={{color: 'white', fontWeight: '800', textAlign: 'center', fontSize: rem(20), marginVertical: rem(8)}}>{'XX'} credits are now active in your account!</Text>
+              
               <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
+                Start using them on your next card project, or learn more about how to create lists and send invitations and gifts!
               </Text>
             </View>
             
@@ -78,10 +76,15 @@ const App: () => React$Node = () => {
 
             {/* DISCLAIMER  */}
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Disclaimer</Text>
+              <Text style={{color: 'grey', fontWeight: '600', textAlign: 'center', letterSpacing: rem(3), marginBottom: rem(8)}}>QUESTIONS, COMMENTS?</Text>
               <Text style={styles.sectionDescription}>
-                <DebugInstructions />
+                We love feedback from our customers.  Let us know how we can make your experience with Felt even better!
               </Text>
+              <TouchableOpacity>
+                <Text style={styles.emailLink}>
+                  hi@feltapp.com
+                </Text>
+              </TouchableOpacity>
             </View>
 
             {/* <LearnMoreLinks /> */}
@@ -89,7 +92,7 @@ const App: () => React$Node = () => {
           </View>
         </ScrollView>
       </SafeAreaView>
-    </>
+    </View>
   );
 };
 
@@ -106,18 +109,18 @@ const styles = StyleSheet.create({
     borderBottomWidth: rem(0.5)
   },
   button: {
-    borderColor: 'yellow',
+    borderColor: 'rgb(222,180,50)',
     borderWidth: rem(2),
     marginVertical: rem(4)
   },
   buttonText: {
-    color: 'yellow',    
+    color: 'rgb(222,180,50)',    
     paddingVertical: rem(10),
     paddingHorizontal: rem(15),
     textAlign: "center",
   },
   body: {
-    backgroundColor: Colors.white,
+    backgroundColor: 'rgb(0,18,26)',
   },
   sectionContainer: {
     marginTop: 36,
@@ -126,19 +129,30 @@ const styles = StyleSheet.create({
   sectionTitle: {
     fontSize: rem(24),
     fontWeight: '600',
-    color: Colors.black,
+    color: 'grey',
+    textAlign: 'center'
   },
   sectionDescription: {
     marginTop: 8,
     fontSize: 18,
     fontWeight: '400',
-    color: Colors.dark,
+    color: 'grey',
+    textAlign: 'center'
+  },
+  emailLink: {
+    color: 'white',
+    fontWeight: '700',
+    textAlign: 'center',
+    fontSize: rem(20),
+    marginTop: rem(10),
+    textDecorationLine: 'underline',
+    // textDecorationStyle: 'solid'
   },
   highlight: {
     fontWeight: '700',
   },
   footer: {
-    color: Colors.dark,
+    color: 'grey',
     fontSize: 12,
     fontWeight: '600',
     padding: 4,
