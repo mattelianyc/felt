@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { 
   StyleSheet,
   Text,
@@ -12,7 +12,6 @@ import CreditCount from './CreditCount.component'
 import theme from '../styles/theme'
 
 function Account() {
-
   return (
     <>
       <View style={styles.container}>

@@ -11,7 +11,7 @@ import EmailFeedbackLink from './EmailFeedbackLink.component'
 // Styling
 import theme from '../styles/theme'
 
-function Disclaimer() {
+function Feedback() {
 
   return (
     <View style={styles.container}>
@@ -26,7 +26,7 @@ function Disclaimer() {
 
 const styles = StyleSheet.create({
   ...theme.app,
-  ...theme.disclaimer
+  ...theme.feedback
 })
 
-export default Disclaimer;
+export default Feedback;

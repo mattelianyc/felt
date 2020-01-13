@@ -8,7 +8,7 @@ import {
 // Components
 import Account from '../components/Account.component'
 import FeaturetteDivider from '../components/FeaturetteDivider.component'
-import Disclaimer from '../components/Disclaimer.component'
+import Feedback from '../components/Feedback.component'
 // Styling
 import theme from '../styles/theme'
 
@@ -19,7 +19,7 @@ function CreditConfirmation() {
       <ScrollView contentInsetAdjustmentBehavior="automatic">
         <Account />
         <FeaturetteDivider />
-        <Disclaimer />
+        <Feedback />
       </ScrollView>
     </View>
   )

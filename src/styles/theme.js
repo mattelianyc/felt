@@ -65,7 +65,7 @@ const theme = {
       marginHorizontal: rem(10),
     },
   },
-  disclaimer: {
+  feedback: {
     header: {
       color: 'grey',
       fontWeight: '900',
