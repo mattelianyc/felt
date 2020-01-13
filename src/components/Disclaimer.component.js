@@ -4,8 +4,6 @@ import {
   StyleSheet,
   Text,
   View,
-  TouchableOpacity,
-  Linking
 } from 'react-native';
 
 // Components
